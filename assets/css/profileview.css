@@ -1,0 +1,44 @@
+#profile-welcome{
+	text-align: center;
+}
+
+#profile-row-1 > .large-12{
+	background-image: url(../img/debut_light_profile.png);
+	margin: 2em 0 0 0;
+}
+
+.large-4 > img{
+	margin: 1em 0;
+}
+
+.large-4 > h3{
+	margin: 0 auto;
+}
+
+.large-8{
+	/*background-image: url(../img/debut_light.png);*/
+	margin: 1em 0;
+}
+
+.large-8 > #profile-info{
+	margin-left: 1em;
+}
+
+.large-8 > #profile-info > h4, p{
+	line-height: 20px;
+}
+
+#profile-row-2 > .large-12, #profile-recos{
+	background-image: url(../img/debut_light_profile1.png);
+	margin: 0.7em 0;
+}
+
+.large-7{
+	margin-top: -1em;
+}
+
+.large-7 > p{
+	margin-top: -10px;
+	text-align: left;
+	line-height: 1px;
+}

@@ -1,0 +1,12 @@
+#event_slider{
+	margin: 2em auto;
+	max-width: inherit;
+}
+
+#event_details h5, p{
+	display: inline;
+}
+
+.recent-event-dates{
+	font-size: 12px;
+}

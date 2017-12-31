@@ -1,0 +1,24 @@
+body{
+
+}
+ 
+.row{
+	margin: 4em auto;
+}
+
+i.fa{
+	position: relative;
+	left: 38%;
+}
+
+h1, p{
+	text-align: left;
+}
+
+h6{
+	text-align: center;
+}
+
+ul>li.error{
+	color: red;
+}

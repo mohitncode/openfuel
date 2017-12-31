@@ -1,0 +1,7 @@
+@import url(http://localhost/openfuel/assets/fonts/Audiowide-Regular.ttf);
+
+div#oops {
+	margin-top: 9em;
+	text-align: center;
+	font-family: 'Audiowide', 'sans';
+}
