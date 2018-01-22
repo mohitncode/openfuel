@@ -20,7 +20,7 @@ class Profile extends CI_Controller {
 				foreach($profile_details as $user) {
 					$wrapper['full_name'] = $user['first_name'] ." " .$user['last_name'];
 					$wrapper['email_id'] = $user['email_id'];
-					$wrapper['profile_image'] = $user['profile_image'];
+					$wrapper['profile_image'] = base_url() ."uploads/profile_images/" .$user['profile_image'];
 					$wrapper['about'] = $user['about'];
 					$wrapper['created_projects'] = $projects_count;
 					$wrapper['participations'] = $participations_count;
@@ -34,7 +34,7 @@ class Profile extends CI_Controller {
 				foreach($profile_details as $user) {
 					$wrapper['full_name'] = $user['first_name'] ." " .$user['last_name'];
 					$wrapper['email_id'] = $user['email_id'];
-					$wrapper['profile_image'] = $user['profile_image'];
+					$wrapper['profile_image'] = base_url() ."uploads/profile_images/" .$user['profile_image'];
 					$wrapper['about'] = $user['about'];
 					$this->load->view('profile_view', $wrapper);
 				}
@@ -46,7 +46,7 @@ class Profile extends CI_Controller {
 				foreach($profile_details as $user) {
 					$wrapper['full_name'] = $user['org_name'];
 					$wrapper['email_id'] = $user['email_id'];
-					$wrapper['profile_image'] = $user['profile_image'];
+					$wrapper['profile_image'] = base_url() ."uploads/profile_images/" .$user['profile_image'];
 					$wrapper['about'] = $user['about'];
 					$this->load->view('profile_view', $wrapper);
 				}
@@ -57,7 +57,7 @@ class Profile extends CI_Controller {
 			$this->load->view('access_denied_view');
 		}
 	}
-	
+
 	public function my_participations() {
 		$user_id = $this->session->userdata('user_id');
 		$this->load->model('participation_model');
